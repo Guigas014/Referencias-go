@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Roboto", serif;
+}
+
+h1 {
+  text-shadow: 2px 1px darkgreen;
+}
+
+.letter {
+  font-family: "Akaya Telivigala", serif;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+img {
+  width: 400px;
+  height: 350px;
+}
