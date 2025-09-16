@@ -1,0 +1,184 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1696892205057
+  modified: 1696892205057
+  description: ""
+collection:
+  - name: Concursos App
+    meta:
+      id: fld_7514409fefc540e49ed3bfa0d315b228
+      created: 1731696433789
+      modified: 1731696551591
+      sortKey: -1731696433789
+      description: ""
+  - name: Jogo da forca GO
+    meta:
+      id: fld_79e334fee5cc4f448c9faa97284a1c75
+      created: 1731696495958
+      modified: 1739936331126
+      sortKey: -1731696495958
+      description: ""
+    children:
+      - url: http://localhost:1323/word
+        name: Get Palavras
+        meta:
+          id: req_07b278837d884ce7bcdaf7c580aa2648
+          created: 1731696528475
+          modified: 1731696556471
+          isPrivate: false
+          description: ""
+          sortKey: -1731696528475
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.1.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:1323/word
+        name: Post Palavras
+        meta:
+          id: req_a48b536bde9149afb54134fc7890d11b
+          created: 1731698633070
+          modified: 1731706900303
+          isPrivate: false
+          description: ""
+          sortKey: -1731696524827.625
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"letter": "h"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/10.1.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:1323/word/new
+        name: Get Nova Palavra
+        meta:
+          id: req_bb76ff4d7d2c4c6497366f38a3dea5e5
+          created: 1731699742850
+          modified: 1731699747633
+          isPrivate: false
+          description: ""
+          sortKey: -1731696521180.25
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.1.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Carnaval
+    meta:
+      id: fld_de4b9079e8ec4bc2bd8305e344c0f465
+      created: 1740881416524
+      modified: 1744146543693
+      sortKey: -1740881416524
+      description: ""
+    children:
+      - name: Gestao vagas
+        meta:
+          id: fld_b8fc1db118974ca1acb38e8c2e87a1e2
+          created: 1740926521715
+          modified: 1740926521715
+          sortKey: -1740926521715
+          description: ""
+      - name: Curso
+        meta:
+          id: fld_2b92d873d78941ce9a9f97fbf50f3994
+          created: 1744146560627
+          modified: 1744146567495
+          sortKey: -1744146560627
+          description: ""
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1696892357350
+    modified: 1741108162857
+  cookies:
+    - key: JSESSIONID
+      value: AF3CEF4639575D778FB3F613BDBA953D
+      domain: localhost
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-03-02T21:54:06.605Z
+      lastAccessed: 2025-03-04T17:09:22.856Z
+      id: f36c68cb-d3b9-4720-b066-96432f0b5282
+    - key: JSESSIONID
+      value: FF64EC691EF2210C59D05D63B68B488B
+      domain: 127.0.0.1
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-03-03T02:58:09.599Z
+      lastAccessed: 2025-03-03T02:58:09.599Z
+      id: 0a321edb-ba61-4412-99c3-caf1d7165eb0
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1696892357349
+    modified: 1753581277143
+    isPrivate: false
+  data:
+    base_url: "{{ _.scheme }}://{{ _.host }}{{ _.base_path }}"
+  subEnvironments:
+    - name: OpenAPI env localhost:8080
+      meta:
+        id: env_4b6f86e1bf9a405fbaa80273b8852ad7
+        created: 1753581277145
+        modified: 1753581277145
+        isPrivate: false
+        sortKey: 1753581277145
+      data:
+        scheme: http
+        base_path: ""
+        host: localhost:8080
+    - name: OpenAPI env localhost:8081
+      meta:
+        id: env_78ce2d631812464a915aa83eb461634e
+        created: 1753581277146
+        modified: 1753581277146
+        isPrivate: false
+        sortKey: 1753581277146
+      data:
+        scheme: http
+        base_path: ""
+        host: localhost:8081
+    - name: Gateway
+      meta:
+        id: env_1712149062894cbeb2fc2c21f2acf4d1
+        created: 1753726117578
+        modified: 1753726740394
+        isPrivate: false
+        sortKey: 1753726117578
+      data:
+        scheme: http
+        base_path: ""
+        host: localhost:9999
